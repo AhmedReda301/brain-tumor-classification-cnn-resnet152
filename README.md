@@ -115,12 +115,19 @@ python src/train.py --model cnn
 ```bash
 python src/train.py --model resnet152
 ```
+4. Download the Model Checkpoint
+Use the Kaggle Hub API:
+```python
+import kagglehub
 
+# Download latest version
+path = kagglehub.model_download("ahmedredaahmedali/cnn-model-resnet152/pyTorch/default")
 
+print("Path to model files:", path)
+
+```
 
 ## <span style="color:#FF69B4;"> Project Structure:</span>
-
-
 
 <details>
 <summary> Click to expand</summary>
