@@ -20,8 +20,8 @@ It includes full <span style="color:#32CD32;">data preprocessing</span>, <span s
 
 ## <span style="color:#32CD32;"> Models:</span>  
 
-Download the Model Checkpoint
-Use the Kaggle Hub API:
+- Models Checkpoint Download
+You can retrieve the latest trained model checkpoint using the Kaggle Hub API:
 ```python
 import kagglehub
 
@@ -31,9 +31,8 @@ path = kagglehub.model_download("ahmedredaahmedali/cnn-model-resnet152/pyTorch/d
 print("Path to model files:", path)
 
 ```
-
-#### CNN_TUMOR Architecture Summary
-
+#### CNN_TUMOR Architecture Summary  
+<hr style="border:0.5px solid #ccc;"/>
 -  **Input:** Image tensor of shape `(C, H, W)` (channels, height, width)
 
 -  **Convolutional Layers:** 4 layers with increasing filters:
@@ -56,7 +55,7 @@ Each conv layer is followed by ReLU activation and 2×2 max pooling (downsamplin
 ---
 
 #### ResNet152_TUMOR Summary
-
+<hr style="border:0.5px solid #ccc;"/>
 -  **Backbone:** Pretrained ResNet-152 (ImageNet weights by default)
 
 -  **Fine-tuning strategy:**
